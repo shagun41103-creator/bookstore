@@ -34,7 +34,7 @@ function AddCourse() {
 
         try {
             const res = await axios.post(
-                "http://localhost:4001/course/add",
+                `${import.meta.env.VITE_SERVER_URL}/course/add`,
                 formData
             );
 

@@ -18,7 +18,7 @@ function Signup() {
     };
 
     try {
-      const res = await axios.post('http://localhost:4001/user/signup', userInfo);
+      const res = await axios.post(`${import.meta.env.VITE_SERVER_URL}/user/signup`, userInfo);
       console.log(res.data);
 
       if (res.data) {

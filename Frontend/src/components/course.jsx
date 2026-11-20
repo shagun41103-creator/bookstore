@@ -10,7 +10,7 @@ function Course() {
 
     const getCourse = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/course/get");
+        const res = await axios.get(`${import.meta.env.VITE_SERVER_URL}/course/get`);
         console.log(res.data);
         setCourse(res.data);
         // console.log("Course data:", course);
