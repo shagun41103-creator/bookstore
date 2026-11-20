@@ -35,6 +35,9 @@ try {
 app.use("/book", bookRoute);
 app.use("/user", userRoute)
 app.use('/course',upload.single("image"), courseRoute)
+app.get("/health", (req, res) => {
+    res.status(200).json({ message: "Server is healthy" });
+});
 
 
 app.listen(PORT, () => {
