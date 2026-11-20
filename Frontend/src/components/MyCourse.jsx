@@ -3,7 +3,7 @@ import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-function Course() {
+function MyCourse() {
   const [course, setCourse] = useState([]);
 
   useEffect(() => {
@@ -82,6 +82,6 @@ function Course() {
   );
 }
 
-export default Course;
+export default MyCourse;
 
 
